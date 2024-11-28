@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "2f6787f5-7716-4065-ba59-86d3ebe859e7",
+		"name": "Validation-exception-handling",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14397829"
+	},
+	"item": [
+		{
+			"name": "Create Usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"{{$randomFullName}}\",\n    \"email\": \"{{$randomEmail}}\",\n    \"mobile\": 1564866539,\n    \"gender\": \"M\",\n    \"age\": 21,\n    \"nationality\": \"Argentino\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9292/users/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9292",
+					"path": [
+						"users",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
